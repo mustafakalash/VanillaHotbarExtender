@@ -1,0 +1,13 @@
+{
+  "Author": "mkalash",
+  "Name": "Vanilla Hotbar Extender",
+  "Punchline": "Save and load actions into hotbars without taking up extra job hotbars.",
+  "Description": "",
+  "InternalName": "VanillaHotbarExtender",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "hotbar",
+    "ui",
+    "menu"
+  ]
+}
