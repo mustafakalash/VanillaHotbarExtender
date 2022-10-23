@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>mkalash</Authors>
     <Company></Company>
-    <Version>0.0.0.1</Version>
+    <Version>1</Version>
     <Description>Save and load actions into hotbars without taking up extra job hotbars.</Description>
     <Copyright>mkalash 2022</Copyright>
     <PackageProjectUrl>https://github.com/mustafakalash/VanillaHotbarExtender</PackageProjectUrl>

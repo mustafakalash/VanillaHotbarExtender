@@ -18,7 +18,7 @@ namespace VanillaHotbarExtender {
 
     [Serializable]
     public class Configuration : IPluginConfiguration {
-        public int Version { get; set; } = 0;
+        public int Version { get; set; } = 1;
 
         public Dictionary<string, HotbarSlotSave[]> Hotbars { get; set; } = new Dictionary<string, HotbarSlotSave[]>();
 
