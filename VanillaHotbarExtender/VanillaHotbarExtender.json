@@ -2,9 +2,11 @@
   "Author": "mkalash",
   "Name": "Vanilla Hotbar Extender",
   "Punchline": "Save and load actions into hotbars without taking up extra job hotbars.",
-  "Description": "",
+  "Description": "Allows you to use commands to save the actions in a hotbar and then load them into any other hotbar. Like the vanilla \"/hotbar copy\" command, but unlimited, without taking up other hotbars to save the actions.",
   "InternalName": "VanillaHotbarExtender",
   "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/mustafakalash/VanillaHotbarExtender.git",
+  "Changelog": "1\n -First release.",
   "Tags": [
     "hotbar",
     "ui",
