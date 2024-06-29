@@ -8,9 +8,9 @@ namespace VanillaHotbarExtender {
     [Serializable]
     public struct HotbarSlotSave {
         public uint CommandId;
-        public HotbarSlotType CommandType;
+        public RaptureHotbarModule.HotbarSlotType CommandType;
 
-        public HotbarSlotSave(uint commandId, HotbarSlotType commandType) {
+        public HotbarSlotSave(uint commandId, RaptureHotbarModule.HotbarSlotType commandType) {
             this.CommandId = commandId;
             this.CommandType = commandType;
         }

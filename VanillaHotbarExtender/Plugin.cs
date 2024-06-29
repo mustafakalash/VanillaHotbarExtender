@@ -28,10 +28,10 @@ namespace VanillaHotbarExtender {
         public WindowSystem WindowSystem = new("VanillaHotbarExtender");
 
         public Plugin(
-            [RequiredVersion("1.0")] DalamudPluginInterface pluginInterface,
-            [RequiredVersion("1.0")] ICommandManager commandManager,
-            [RequiredVersion("1.0")] IChatGui chatGui,
-            [RequiredVersion("1.0")] IClientState clientState    
+            DalamudPluginInterface pluginInterface,
+            ICommandManager commandManager,
+            IChatGui chatGui,
+            IClientState clientState    
         ) {
             this.PluginInterface = pluginInterface;
             this.CommandManager = commandManager;
@@ -107,7 +107,7 @@ namespace VanillaHotbarExtender {
 
                     HotbarSlotSave[] saveHotbars = new HotbarSlotSave[HOTBAR_SIZE];
                     for(uint i = 0; i < HOTBAR_SIZE; i++) {
-                        HotBarSlot* slot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
+                        RaptureHotbarModule.HotbarSlot* slot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
                         saveHotbars[i] = new HotbarSlotSave(slot->CommandId, slot->CommandType);
                     }
 
@@ -129,7 +129,7 @@ namespace VanillaHotbarExtender {
 
                     HotbarSlotSave[] hotbar = this.Configuration.Hotbars[saveName];
                     for (uint i = 0; i < HOTBAR_SIZE; i++) {
-                        HotBarSlot* gameSlot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
+                        RaptureHotbarModule.HotbarSlot* gameSlot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
                         gameSlot->Set(hotbar[i].CommandType, hotbar[i].CommandId);
                         raptureHotbarModule->WriteSavedSlot(raptureHotbarModule->ActiveHotbarClassJobId, hotbarNumber, i, gameSlot, false, ClientState.IsPvP);
                     }
@@ -141,8 +141,8 @@ namespace VanillaHotbarExtender {
                     uint hotbarNumber = uint.Parse(argsList[1]) - 1;
 
                     for (uint i = 0; i < HOTBAR_SIZE; i++) {
-                        HotBarSlot* gameSlot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
-                        gameSlot->Set(HotbarSlotType.Empty, 0);
+                        RaptureHotbarModule.HotbarSlot* gameSlot = raptureHotbarModule->GetSlotById(hotbarNumber, i);
+                        gameSlot->Set(RaptureHotbarModule.HotbarSlotType.Empty, 0);
                         raptureHotbarModule->WriteSavedSlot(raptureHotbarModule->ActiveHotbarClassJobId, hotbarNumber, i, gameSlot, false, ClientState.IsPvP);
                     }
                 }
