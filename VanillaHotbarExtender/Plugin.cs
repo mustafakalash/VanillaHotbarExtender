@@ -20,7 +20,7 @@ namespace VanillaHotbarExtender {
         private RaptureHotbarModule* raptureHotbarModule = Framework.Instance()->UIModule->GetRaptureHotbarModule();
         private ConfigWindow configWindow { get; init; }
 
-        private DalamudPluginInterface PluginInterface { get; init; }
+        private IDalamudPluginInterface PluginInterface { get; init; }
         private ICommandManager CommandManager { get; init; }
         public Configuration Configuration { get; init; }
         public IChatGui ChatGui { get; init; }
@@ -28,7 +28,7 @@ namespace VanillaHotbarExtender {
         public WindowSystem WindowSystem = new("VanillaHotbarExtender");
 
         public Plugin(
-            DalamudPluginInterface pluginInterface,
+            IDalamudPluginInterface pluginInterface,
             ICommandManager commandManager,
             IChatGui chatGui,
             IClientState clientState    
