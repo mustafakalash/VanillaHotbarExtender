@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Authors>mkalash</Authors>
         <AssemblyName>VanillaHotbarExtender</AssemblyName>
-        <Version>1.1.1</Version>
+        <Version>1.2.0</Version>
         <Description>Save and load actions into hotbars without taking up extra job hotbars.</Description>
         <PackageProjectUrl>https://github.com/mustafakalash/VanillaHotbarExtender.git</PackageProjectUrl>
     </PropertyGroup>
