@@ -7,6 +7,7 @@ using VanillaHotbarExtender.Windows;
 using FFXIVClientStructs.FFXIV.Client.System.Framework;
 using FFXIVClientStructs.FFXIV.Client.UI.Misc;
 using Dalamud.Game.Command;
+using Dalamud.Interface.ImGuiNotification;
 
 namespace VanillaHotbarExtender {
     public unsafe sealed class Plugin : IDalamudPlugin {
@@ -26,17 +27,20 @@ namespace VanillaHotbarExtender {
         public IChatGui ChatGui { get; init; }
         public IClientState ClientState { get; init; }
         public WindowSystem WindowSystem = new("VanillaHotbarExtender");
+        public INotificationManager NotificationManager { get; init; }
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
             ICommandManager commandManager,
             IChatGui chatGui,
-            IClientState clientState    
+            IClientState clientState,
+            INotificationManager notificationManager
         ) {
             this.PluginInterface = pluginInterface;
             this.CommandManager = commandManager;
             this.ChatGui = chatGui;
             this.ClientState = clientState;
+            this.NotificationManager = notificationManager;
 
             this.Configuration = this.PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             this.Configuration.Initialize(this.PluginInterface);
