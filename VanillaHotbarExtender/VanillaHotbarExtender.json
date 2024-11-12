@@ -6,7 +6,7 @@
   "InternalName": "VanillaHotbarExtender",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/mustafakalash/VanillaHotbarExtender.git",
-  "Changelog": "Hot bars can now be exported and imported. Thanks @CerulanLumina!",
+  "Changelog": "7.1/api11",
   "Tags": [
     "hotbar",
     "ui",
