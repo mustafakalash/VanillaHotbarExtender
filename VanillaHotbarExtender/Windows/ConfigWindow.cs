@@ -4,7 +4,7 @@ using System.IO;
 using System.Numerics;
 using System.Text.Unicode;
 using Dalamud.Interface.Windowing;
-using ImGuiNET;
+using Dalamud.Bindings.ImGui;
 using Newtonsoft.Json;
 using Dalamud.Interface.ImGuiNotification;
 
