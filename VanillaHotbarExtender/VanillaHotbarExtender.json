@@ -6,7 +6,7 @@
   "InternalName": "VanillaHotbarExtender",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/mustafakalash/VanillaHotbarExtender.git",
-  "Changelog": "7.3/api13",
+  "Changelog": "7.4/api14",
   "Tags": [
     "hotbar",
     "ui",

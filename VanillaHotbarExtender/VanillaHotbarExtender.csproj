@@ -3,13 +3,13 @@
     <PropertyGroup>
         <Authors>mkalash</Authors>
         <AssemblyName>VanillaHotbarExtender</AssemblyName>
-        <Version>1.2.3</Version>
+        <Version>1.2.4</Version>
         <Description>Save and load actions into hotbars without taking up extra job hotbars.</Description>
         <PackageProjectUrl>https://github.com/mustafakalash/VanillaHotbarExtender.git</PackageProjectUrl>
     </PropertyGroup>
 
     <PropertyGroup>
-        <TargetFramework>net9.0-windows</TargetFramework>
+        <TargetFramework>net10.0-windows</TargetFramework>
         <Platforms>x64</Platforms>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
@@ -28,7 +28,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="DalamudPackager" Version="13.0.0" />
+        <PackageReference Include="DalamudPackager" Version="14.0.0" />
         <Reference Include="FFXIVClientStructs">
             <HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
             <Private>false</Private>
